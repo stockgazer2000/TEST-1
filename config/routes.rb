@@ -1,4 +1,12 @@
 Ticketee::Application.routes.draw do
+
+  #added route to ProjectsController!!!
+  root :to => "projects#index"
+  
+  #add route to resources !!!
+  resources :projects
+  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

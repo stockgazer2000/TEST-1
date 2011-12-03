@@ -4,6 +4,7 @@ source 'http://rubygems.org'
 #gem 'rails', '3.0.9'  - commente in favor of example's due to
 #coffe-rails 3.1.1 dependency on railties 3.1.0
 gem 'rails', '3.1.0'
+#gem 'rails', '3.1.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -16,8 +17,11 @@ gem 'sqlite3'
 group :assets do
   gem 'sass-rails',   '~> 3.1.4'
   gem 'coffee-rails', '~> 3.1.1'
+  #gem 'dynamic_form'
   gem 'uglifier', '>= 1.0.3'
 end
+
+gem 'dynamic_form'
 
 #added rg
 gem 'jquery-rails'

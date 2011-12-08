@@ -4,7 +4,11 @@ Ticketee::Application.routes.draw do
   root :to => "projects#index"
   
   #add route to resources !!!
-  resources :projects
+  #resources :projects
+  #nested resources
+  resources :projects do
+    resources :tickets
+  end
   
 
   # The priority is based upon order of creation:

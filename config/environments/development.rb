@@ -14,9 +14,12 @@ Ticketee::Application.configure do
   #config.action_view.debug_rjs             = true  !!!!!! not needed RG
   config.action_controller.perform_caching = false
 
+  #needed by Devise! only in dev and test env.! rg
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = false
-
+  
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
 

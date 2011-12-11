@@ -1,5 +1,7 @@
 Ticketee::Application.routes.draw do
 
+  devise_for :users
+
   #added route to ProjectsController!!!
   root :to => "projects#index"
   

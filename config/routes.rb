@@ -76,6 +76,7 @@ Ticketee::Application.routes.draw do
 
   #route needed for the namespace!!!!
   namespace :admin do
+    root :to => "base#index"
     resources :users
   end
 
